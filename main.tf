@@ -5,6 +5,9 @@ resource "aws_instance" "app_server" {
 
   tags = {
     Name = "ExampleAppServerInstance-${count.index + 1}"
+    env  = "Test"
+    owner = "Jagdish"
+    
   }
 }
 
